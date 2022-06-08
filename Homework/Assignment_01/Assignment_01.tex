@@ -681,4 +681,145 @@ the number of breeding pairs of bald eagles increased at a nearly linear rate fr
   \end{enumerate}
 
 \end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1.2 55
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\problem{1.2}{55}
+\textbf{Transformations of $f(x) = x^2$} Use shifts and scalings to transform the
+graph of $ƒ(x) = x^2$ into the graph of $g$. Use a graphing utility to check your work.
+
+\begin{enumerate}[label=\textbf{\alph*. }]
+  \item
+    \begin{multicols}{2}
+      \begin{align*}
+        g(x) &= f(x - 3) \\
+             &= (x - 3)(x - 3) \\
+             &= x^2 - 6x + 9
+      \end{align*}
+      \columnbreak\
+        \begin{figure}[H]
+          \begin{tikzpicture}
+            \begin{axis}[
+              DefaultPlotStyle,
+              xmin = -1,
+              xmax = 9,
+              xtick={-1,-0,...,9},
+              ymin = -1,
+              ymax = 9,
+              ytick={-1,0,...,9},
+            ]
+
+              \addplot[
+                thick,
+                smooth,
+                <->,
+              ]
+              { x^2 - (6 * x) + 9 };
+            \end{axis}
+          \end{tikzpicture}
+        \end{figure}
+    \end{multicols}
+  \item
+    \begin{multicols}{2}
+      \begin{align*}
+        g(x) &= f(2x -4) \\
+             &= (2x - 4)(2x - 4) \\
+             &= 4x^2 - 8x + 16
+      \end{align*}
+      \columnbreak\
+      \begin{figure}[H]
+          \begin{tikzpicture}
+            \begin{axis}[
+              DefaultPlotStyle,
+              xmin = -8,
+              xmax = 4,
+              xtick={-8,-7,...,9},
+              ymin = 10,
+              ymax = 20,
+              ytick={-10,-9,...,80},
+            ]
+
+              \addplot[
+                thick,
+                smooth,
+                <->,
+              ]
+              { 4*x^2 - (8 * x) + 16 };
+            \end{axis}
+          \end{tikzpicture}
+        \end{figure}
+    \end{multicols}
+  \item
+    \begin{multicols}{2}
+      \begin{align*}
+        g(x) &= -3f(x - 2) + 4 \\
+             &= -3(x - 2)(x -2) + 4 \\
+             &= -3(x^2 - 4x + 4) + 4 \\
+             &= -3x^2 + 12x - 4 + 4 \\
+             &= -3x^2 + 12x
+      \end{align*}
+      \columnbreak\
+      \begin{figure}[H]
+          \begin{tikzpicture}
+            \begin{axis}[
+              DefaultPlotStyle,
+              xmin = -8,
+              xmax = 4,
+              xtick={-8,-7,...,9},
+              ymin = 0,
+              ymax = 13,
+              ytick={-10,-9,...,80},
+            ]
+
+              \addplot[
+                thick,
+                smooth,
+                <->,
+              ]
+              { -3*x^2 - (12 * x) };
+            \end{axis}
+          \end{tikzpicture}
+        \end{figure}
+    \end{multicols}
+  \item
+    \begin{multicols}{2}
+      \begin{align*}
+        g(x) &= 6f\left(\frac{x-2}{3}\right) + 1 \\
+             &= 6\left(\frac{x-2}{3}\right)\left(\frac{x-2}{3}\right) + 1 \\
+             &= 6\left(\frac{x^2 - 4x + 4}{9}\right) + 1 \\
+             &= \frac{6x^2 - 24x + 24}{9} + 1 \\
+             &= \frac{2x^2 - 8x + 8}{3} + 1
+      \end{align*}
+      \columnbreak\
+      \begin{figure}[H]
+          \begin{tikzpicture}
+            \begin{axis}[
+              DefaultPlotStyle,
+              xmin = -2,
+              xmax = 6,
+              xtick={-6,-5,...,9},
+              ymin = -1,
+              ymax = 7,
+              ytick={-10,-9,...,80},
+            ]
+
+              \addplot[
+                thick,
+                smooth,
+                <->,
+              ]
+              { ((2*x^2 - (8 * x) + 8)/3) + 1 };
+            \end{axis}
+          \end{tikzpicture}
+        \end{figure}
+    \end{multicols}
+\end{enumerate}
+
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
